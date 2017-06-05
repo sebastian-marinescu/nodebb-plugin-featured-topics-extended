@@ -1,4 +1,11 @@
 {
   "blog": "Blog",
-  "featuredtopics": "Featured Topics"
+  "featuredtopics": "Featured Topics",
+
+  "cancel": "Cancel",
+  "add": "Add Topic",
+
+  "featuretopic": "Feature this Topic",
+  "selecttopictitle": "Featuring topic:",
+  "selectfeaturedtopic": "Select a featured topic list."
 }

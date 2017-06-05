@@ -808,7 +808,7 @@ export function adminBuild (header, cb) {
 // Adds the 'Feature this Topic' link to the 'Topic Tools' menu.
 export function addThreadTools (data, callback) {
   data.tools.push({
-    title: 'Feature this Topic',
+    title: '[[fte:featuretopic]]',
     class: 'mark-featured',
     icon: 'fa-star'
   })

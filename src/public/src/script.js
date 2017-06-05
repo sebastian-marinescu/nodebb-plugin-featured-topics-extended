@@ -8,18 +8,18 @@ $(() => {
       templates.parse('modals/fte-listselect', {lists, title}, (html) => {
         bootbox.dialog({
           size: 'large',
-          title: `Featuring topic: "${title}"`,
+          title: `[[fte:selecttopictitle]] "${title}"`,
           message: html,
           show: true,
           onEscape: true,
           buttons: {
             'cancel': {
-              label: 'Cancel',
+              label: '[[fte:cancel]]',
               className: 'btn-primary',
               callback: () => {}
             },
             'accept': {
-              label: 'Add Topic',
+              label: '[[fte:add]]',
               className: 'btn-default',
               callback: () => {
                 socket.emit('plugins.FeaturedTopicsExtended.featureTopic', {
