@@ -2,9 +2,24 @@
   "blog": "Blog",
   "featuredtopics": "Featured Topics",
 
-  "cancel": "Cancel",
-  "add": "Add Topic",
+  "action.add": "Add Topic",
+  "action.cancel": "Cancel",
+  "action.save": "Save",
 
+  "global.category": "Category",
+  "global.date": "Date",
+  "global.topic": "Topic",
+
+  "list.create.title": "Create a list",
+  "list.create.success": "Created list",
+  "list.delete": "Delete List",
+  "list.new": "New List",
+  "list.overview": "List Topics",
+
+  "topic.featured": "Featured Topic",
+  "topic.unfeatured": "Unfeatured Topic",
+
+  "autofeature": "Automatically feature new topics in these categories.",
   "featuretopic": "Feature this Topic",
   "selecttopictitle": "Featuring topic:",
   "selectfeaturedtopic": "Select a featured topic list."

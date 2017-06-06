@@ -2,9 +2,24 @@
   "blog": "Blog",
   "featuredtopics": "Ausgezeichnete Beiträge",
 
-  "cancel": "Abbrechen",
-  "add": "Beitrag hinzufügen",
+  "action.add": "Beitrag hinzufügen",
+  "action.cancel": "Abbrechen",
+  "action.save": "Speichern",
 
+  "global.category": "Kategorie",
+  "global.date": "Datum",
+  "global.topic": "Beitrag",
+
+  "list.create.title": "Erstellen einer Liste",
+  "list.create.success": "Liste erstellt",
+  "list.delete": "Liste löschen",
+  "list.new": "Neue Liste",
+  "list.overview": "Listen-Beiträge",
+
+  "topic.featured": "Beitrag hinzugefügt",
+  "topic.unfeatured": "Beitrag entfernt",
+
+  "autofeature": "Neue Beiträge in diesen Kategorien automatisch hinzufügen.",
   "featuretopic": "Beitrag in Blog/Liste",
   "selecttopictitle": "Ausgewählter Beitrag:",
   "selectfeaturedtopic": "Wählen Sie eine Liste aus:"

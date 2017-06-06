@@ -1,8 +1,8 @@
 <div id="fte-editor">
   <!-- IF isSelf -->
   <div class="clearfix">
-    <button id="fte-editor-list-add" class="btn btn-primary pull-right">New List</button>
-    <button id="fte-editor-list-delete" class="btn btn-danger pull-right">Delete List</button>
+    <button id="fte-editor-list-add" class="btn btn-primary pull-right">[[fte:list.new]]</button>
+    <button id="fte-editor-list-delete" class="btn btn-danger pull-right">[[fte:list.delete]]</button>
   </div>
   <!-- ENDIF isSelf -->
 
@@ -12,23 +12,23 @@
 
       <!-- IF isSelf -->
       <div class="form-group">
-        <label for="fte-editor-list-autofeature">Automatically feature new topics in these categories.</label>
+        <label for="fte-editor-list-autofeature">[[fte:autofeature]]</label>
         <div class="input-group">
           <input id="fte-editor-list-autofeature" class="form-control" type="text" value="{list.autoFeature}"/>
           <span class="input-group-btn">
-            <button id="fte-editor-list-autofeature-save" class="btn btn-success" type="button">Save</button>
+            <button id="fte-editor-list-autofeature-save" class="btn btn-success" type="button">[[fte:action.save]]</button>
           </span>
         </div>
       </div>
       <!-- ENDIF isSelf -->
 
-      <label>List Topics</label>
+      <label>[[fte:list.overview]]</label>
       <table class="table table-bordered table-striped">
         <thead>
           <tr>
-            <th>Topic</th>
-            <th class="fte-m16">Category</th>
-            <th class="fte-m16">Date</th>
+            <th>[[fte:global.topic]]</th>
+            <th class="fte-m16">[[fte:global.category]]</th>
+            <th class="fte-m16">[[fte:global.date]]</th>
             <th class="fte-w1" <!-- IF !isSelf -->style="display:none;"<!-- ENDIF !isSelf -->></th>
           </tr>
         </thead>
