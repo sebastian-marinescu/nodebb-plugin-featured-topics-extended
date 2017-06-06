@@ -37,5 +37,5 @@
     "./public/src/acp.js"
   ],
   "languages": "public/language",
-  "defaultLang": "en_GB"
+  "defaultLang": "de"
 }
