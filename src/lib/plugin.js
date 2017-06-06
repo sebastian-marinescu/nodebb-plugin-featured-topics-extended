@@ -827,7 +827,7 @@ export function addPostTools (data, callback) {
     if (isMain) {
       data.tools.push({
         action: 'mark-featured',
-        html: 'Feature this Topic',
+        html: '[[fte:featuretopic]]',
         icon: 'fa-star'
       })
     }

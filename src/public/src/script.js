@@ -54,7 +54,7 @@ $(() => {
       $('[component="topic"]').on('click', '[component="mark-featured"]', () => {openTopicsListModal(app.user.uid)})
     }
 
-    $(window).on('action:ajaxify.end', registerEventHandlers)
+    // $(window).on('action:ajaxify.end', registerEventHandlers)
 
     registerEventHandlers()
   })
