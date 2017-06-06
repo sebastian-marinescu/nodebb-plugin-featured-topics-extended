@@ -14,12 +14,12 @@ $(() => {
           onEscape: true,
           buttons: {
             'cancel': {
-              label: '[[fte:cancel]]',
+              label: '[[fte:action.cancel]]',
               className: 'btn-primary',
               callback: () => {}
             },
             'accept': {
-              label: '[[fte:add]]',
+              label: '[[fte:action.add]]',
               className: 'btn-default',
               callback: () => {
                 socket.emit('plugins.FeaturedTopicsExtended.featureTopic', {
@@ -29,7 +29,7 @@ $(() => {
                 }, err => {
                   if (err) return app.alertError(err.message)
 
-                  app.alertSuccess('Featured Topic')
+                  app.alertSuccess('[[fte:topic.featured]]')
                 })
               }
             }
@@ -50,7 +50,7 @@ $(() => {
     }
 
     function registerEventHandlers () {
-      $('.topic').on('click', '.thread-tools .mark-featured', () => {openTopicsListModal()})
+      // $('.topic').on('click', '.thread-tools .mark-featured', () => {openTopicsListModal()})
       $('[component="topic"]').on('click', '[component="mark-featured"]', () => {openTopicsListModal(app.user.uid)})
     }
 
@@ -78,14 +78,14 @@ $(() => {
 
   function setupEditor (theirid) {
     $('#fte-editor-list-add').click(() => {
-      bootbox.prompt('Create a list', list => {
+      bootbox.prompt('[[fte:list.create.title]]', list => {
         if (!list) return
 
         socket.emit('plugins.FeaturedTopicsExtended.createList', {theirid, list}, err => {
           if (err) {
             app.alertError(err.message)
           } else {
-            app.alertSuccess(`Created list <b>${list}</b>!`)
+            app.alertSuccess(`[[fte:list.create.success]] <b>${list}</b>!`)
             $('.fte-editor-list-select').append(`<option value="${list}">${list}</option>`)
           }
         })
@@ -146,7 +146,7 @@ $(() => {
       socket.emit('plugins.FeaturedTopicsExtended.unfeatureTopic', {theirid, slug, tid}, (err, data) => {
         if (err) return app.alertError(err.message)
 
-        app.alertSuccess('Unfeatured topic')
+        app.alertSuccess('[[fte:topic.unfeatured]]')
 
         const page = $('.fte-topic-list').data('page')
 
