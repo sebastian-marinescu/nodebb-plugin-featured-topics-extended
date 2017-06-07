@@ -1,10 +1,35 @@
 {
   "blog": "Blog",
-  "featuredtopics": "Ausgezeichnete Beiträge",
+  "featuredtopics": "Listen",
 
   "action.add": "Beitrag hinzufügen",
   "action.cancel": "Abbrechen",
   "action.save": "Speichern",
+
+  "date.day.1": "Sonntag",
+  "date.day.2": "Montag",
+  "date.day.3": "Dienstag",
+  "date.day.4": "Mittwoch",
+  "date.day.5": "Donnerstag",
+  "date.day.6": "Freitag",
+  "date.day.7": "Samstag",
+
+  "date.month.1": "Jan",
+  "date.month.2": "Feb",
+  "date.month.3": "Mär",
+  "date.month.4": "Apr",
+  "date.month.5": "Mai",
+  "date.month.6": "Jun",
+  "date.month.7": "Jul",
+  "date.month.8": "Aug",
+  "date.month.9": "Sep",
+  "date.month.10": "Okt",
+  "date.month.11": "Nov",
+  "date.month.12": "Dez",
+
+  "date.time.am": "vormittags",
+  "date.time.at": "um",
+  "date.time.pm": "nachmittags",
 
   "global.category": "Kategorie",
   "global.date": "Datum",
@@ -16,11 +41,20 @@
   "list.new": "Neue Liste",
   "list.overview": "Listen-Beiträge",
 
+  "overview.continuereading": "Weiterlesen…",
+  "overview.replies": "Antworten",
+  "overview.upvotes": "Positive Bewertungen",
+  "overview.views": "Ansichten",
+
+  "pagination.next": "Next Page",
+  "pagination.previous": "Previous Page",
+
   "topic.featured": "Beitrag hinzugefügt",
   "topic.unfeatured": "Beitrag entfernt",
 
   "autofeature": "Neue Beiträge in diesen Kategorien automatisch hinzufügen.",
   "featuretopic": "Beitrag in Blog/Liste",
+  "featuretopicnews": "Beitrag in News oder andere globale Liste",
   "selecttopictitle": "Ausgewählter Beitrag:",
   "selectfeaturedtopic": "Wählen Sie eine Liste aus:"
 }

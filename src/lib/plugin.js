@@ -808,7 +808,7 @@ export function adminBuild (header, cb) {
 // Adds the 'Feature this Topic' link to the 'Topic Tools' menu.
 export function addThreadTools (data, callback) {
   data.tools.push({
-    title: '[[fte:featuretopic]]',
+    title: '[[fte:featuretopicnews]]',
     class: 'mark-featured',
     icon: 'fa-star'
   })
@@ -902,8 +902,8 @@ export function userProfileMenu (data, next) {
 }
 
 // Date parsing helper.
-const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-const days   = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+const months = ['[[fte:date.month.1]]', '[[fte:date.month.2]]', '[[fte:date.month.3]]', '[[fte:date.month.4]]', '[[fte:date.month.5]]', '[[fte:date.month.6]]', '[[fte:date.month.7]]', '[[fte:date.month.8]]', '[[fte:date.month.9]]', '[[fte:date.month.10]]', '[[fte:date.month.11]]', '[[fte:date.month.12]]']
+const days   = ['[[fte:date.day.1]]', '[[fte:date.day.2]]', '[[fte:date.day.3]]', '[[fte:date.day.4]]', '[[fte:date.day.5]]', '[[fte:date.day.6]]', '[[fte:date.day.7]]']
 function getDate (timestamp) {
   let date = new Date(parseInt(timestamp, 10))
   const hours = date.getHours()
@@ -913,12 +913,12 @@ function getDate (timestamp) {
     month : months[date.getMonth()],
     date  : date.getDate(),
     day   : days[date.getDay()],
-    mer   : hours >= 12 ? 'PM' : 'AM',
+    mer   : hours >= 12 ? '[[fte:date.time.pm]]' : '[[fte:date.time.am]]',
     hour  : hours === 0 ? 12 : (hours > 12 ? hours - 12 : hours),
     min   : date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes(),
     sec   : date.getSeconds() < 10 ? `0${date.getSeconds()}` : date.getSeconds()
   }
-  date.start = (Date.now() - parseInt(timestamp, 10))/1000 < 604800 ? `${date.day} at ${date.hour}:${date.min} ${date.mer}` : date.full
+  date.start = (Date.now() - parseInt(timestamp, 10))/1000 < 604800 ? `${date.day} [[fte:date.time.at]] ${date.hour}:${date.min} ${date.mer}` : date.full
   return date
 }
 
